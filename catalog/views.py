@@ -3,6 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 from .models import Book, Author, BookInstance, genre
 
+
+
 def index (request):
     """
     Función vista para la página inicio del sitio.
@@ -20,3 +22,4 @@ def index (request):
         'index.html',
         context={'num_books':num_books,'num_instances':num_instances,'num_instances_available':num_instances_available,'num_authors':num_authors},
     )
+
